@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				game: {
+					'dark': '#1A1F2C',
+					'purple': '#8B5CF6',
+					'magenta': '#D946EF',
+					'cyan': '#0EA5E9',
+					'light': '#D6BCFA'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +91,43 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'glow': {
+					'0%, 100%': { 
+						textShadow: '0 0 10px #8B5CF6, 0 0 20px #8B5CF6, 0 0 30px #8B5CF6'
+					},
+					'50%': {
+						textShadow: '0 0 20px #0EA5E9, 0 0 30px #0EA5E9, 0 0 40px #0EA5E9'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'pulse-border': {
+					'0%, 100%': {
+						boxShadow: '0 0 0 0 rgba(139, 92, 246, 0.4)'
+					},
+					'50%': {
+						boxShadow: '0 0 0 4px rgba(139, 92, 246, 0.4)'
+					}
+				},
+				'background-pan': {
+					'0%': { backgroundPosition: '0% center' },
+					'100%': { backgroundPosition: '-200% center' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow': 'glow 3s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-border': 'pulse-border 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'background-pan': 'background-pan 3s linear infinite'
 			}
 		}
 	},
