@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,7 +44,6 @@
     --sidebar-border: 222 47% 11%;
     --sidebar-ring: 250 87% 67%;
   }
-}
 }
 
 @layer base {
